@@ -1,0 +1,44 @@
+// Mouse Scroller
+.center {
+  left: 50%;
+  bottom: 10%;
+}
+
+.mouse-down {
+  position: absolute;
+  width: 15px;
+  height: 30px;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  display: none;
+
+  @media screen and (min-width: $laptop) {
+    display: block;
+  }
+}
+
+.bullet {
+  width: 5px;
+  height: 5px;
+  background: #fff;
+  margin: auto auto;
+  border-radius: 8px;
+  position: relative;
+
+  -webkit-animation: scrollDownUp 3s infinite; /* Chrome, Safari, Opera */
+    animation: scrollDownUp 3s infinite;
+}
+
+/* Chrome, Safari, Opera */ 
+@-webkit-keyframes scrollDownUp {
+    0% {top: 5px;}
+    50% {top: 20px;}
+    100% {top: 5px;}
+} 
+
+/* Standard syntax */ 
+@keyframes scrollDownUp {
+    0% {top: 5px;}
+    50% {top: 20px;}
+    100% {top: 5px;}
+}

@@ -11,8 +11,13 @@
     section {
 
         &.panel {
-            height: 80vh;
+            height: 40vh;
+            max-height: 80vh;
             // border: 1px solid red;
+
+            @media screen and (min-width: $phablet) {
+                height: 60vh
+            }
         }
         
         &.anchor {

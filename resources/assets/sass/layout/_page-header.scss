@@ -75,6 +75,7 @@ header.page-header {
                     display: inline-block;
                     margin: 0;
                     width: 100%;
+                    text-transform: uppercase;
                     @include navigation-font();
 
                     &:last-child {
@@ -104,7 +105,7 @@ header.page-header {
                         margin-bottom: em(3px);
                         padding: em(10px);
                         background-color: $nav-link-mobile-bg-color;
-                        color: $nav-link-mobile-color;
+                        color: #52B946;
                         text-decoration: none;
                         @include typl8-typescale(map-get($typl8-scale, typl8-delta), $typl8-font-base, rem);
                         line-height: em(20px);
@@ -116,18 +117,18 @@ header.page-header {
                             background-color: $nav-link-bg-color;
                             @include typl8-typescale(map-get($typl8-scale, typl8-zeta), $typl8-font-base, rem);
                             line-height: em(18px);
-                            color: $nav-link-color;
+                            color: #52B946;
                         }
 
                         @media screen and (min-width: $laptop) {
                             padding: 0 em(10px);
-                            @include typl8-typescale(map-get($typl8-scale, typl8-epsilon), $typl8-font-base, rem);
+                            // @include typl8-typescale(map-get($typl8-scale, typl8-epsilon), $typl8-font-base, rem);
                             line-height: em(18px);
                         }
 
                         @media screen and (min-width: $desktop) {
                             padding: 0 em(10px);
-                            @include typl8-typescale(map-get($typl8-scale, typl8-delta), $typl8-font-base, rem);
+                            // @include typl8-typescale(map-get($typl8-scale, typl8-delta), $typl8-font-base, rem);
                             line-height: em(20px);
                         }
 
@@ -138,7 +139,7 @@ header.page-header {
                             cursor: pointer;
 
                             @media screen and (min-width: $phablet) {
-                                color: $nav-link-hover-color;
+                                color: lighten(#52B946, 25%);
                                 background-color: $nav-link-hover-bg-color;
                             }
                         }

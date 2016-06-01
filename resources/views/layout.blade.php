@@ -35,14 +35,17 @@
 	<div class="page-container">
 	    <header class="page-header js-header">
 	        <div class="page-inner">
-	            <a class="brand-logo" href="#"><img src="img/brand-logo.png" alt="brand-logo" width="192" height="192"></a>
+	            <a class="brand-logo" href="#"><img src="img/sacred-cycle-logo-grn-text-vert.png" alt="brand-logo" width="192" height="192"></a>
 	                
 	            <nav class="primary" role="navigation">
 	
 	                <ul data-gumshoe>
-	                    <li><a href="">Section 1</a></li>
-	                    <li><a href="">Section 2</a></li>
-	                    <li><a href="">Section 3</a></li>
+	                    <li><a href="">Home</a></li>
+	                    <li><a href="">About</a></li>
+	                    <li><a href="">Donate</a></li>
+	                    <li><a href="">Apply here</a></li>
+	                    <li><a href="">For survivors</a></li>
+	                    <li><a href="">Team riders</a></li>
 	                </ul>
 	
 	            </nav>

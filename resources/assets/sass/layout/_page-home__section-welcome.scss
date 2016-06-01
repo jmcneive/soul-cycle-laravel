@@ -10,4 +10,33 @@ section.welcome-panel {
 		background-position: center;
 		background-size: cover;
 	}
+
+	.page-inner {
+		height: 100%;
+		position: relative;
+
+		h1 {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 85%;
+
+			border: 3px solid $white;
+			text-align: center;
+			line-height: 1.2;
+			font-weight: 700;
+			padding: 2% 2%;
+			color: $white;
+			@include typl8-typescale(map-get($typl8-scale, typl8-delta), $typl8-font-base, rem);
+
+			@media screen and (min-width: $phablet) {
+				width: 65%;
+			}
+
+			@media screen and (min-width: $laptop) {
+				width: 40%;
+			}
+		}
+	}
 }
