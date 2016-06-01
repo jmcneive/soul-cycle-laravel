@@ -3,13 +3,17 @@
     position: relative;
     z-index: $z-index-page-body;
     margin-top: $header-height-sm;
-    padding: 1.5%;
     
     @media screen and (min-width: $phablet) {
         margin-top: $header-height-lg
     }
     
     section {
+
+        &.panel {
+            height: 80vh;
+            // border: 1px solid red;
+        }
         
         &.anchor {
             display: block;

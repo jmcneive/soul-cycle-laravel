@@ -7,14 +7,14 @@ header.page-header {
     width: 100%;
     z-index: $z-index-page-header;
     overflow-y: hidden;
-    color: $page-header-color;
-    background-color: $page-header-bg-color;
+    color: #52B946;
+    background-color: $white;
+    box-shadow: 0 2px 0 #DCDBDB;
     height: $header-height-sm;
     transition: height 0.4s ease-out;
 
     @media screen and (min-width: $phablet) {
         height: $header-height-lg;
-        background-color: $black;
     }
 
     a.brand-logo {

@@ -1,0 +1,13 @@
+section.welcome-panel {
+	background: url('../img/splash-hero__one-mobile.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
+	@media screen and (min-width: $phablet) {
+		background: url('../img/splash-hero__one.jpg');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+}
