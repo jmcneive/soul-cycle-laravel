@@ -1204,10 +1204,10 @@ header.page-header {
             header.page-header nav.primary ul li {
               display: inline-block;
               width: auto;
-              margin: 2.0555555556em 0 0 0; } }
+              margin: 2.3333333333em 0 0 0; } }
           @media screen and (min-width: 1195px) {
             header.page-header nav.primary ul li {
-              margin-top: 1.9444444444em; } }
+              margin-top: 2.2222222222em; } }
           header.page-header nav.primary ul li a {
             display: block;
             margin-bottom: 0.1666666667em;
@@ -1228,11 +1228,11 @@ header.page-header {
                 color: #52B946; } }
             @media screen and (min-width: 1024px) {
               header.page-header nav.primary ul li a {
-                padding: 0 0.5555555556em;
+                padding: 0 0.7222222222em;
                 line-height: 1em; } }
             @media screen and (min-width: 1195px) {
               header.page-header nav.primary ul li a {
-                padding: 0 0.5555555556em;
+                padding: 0 0.8888888889em;
                 line-height: 1.1111111111em; } }
             header.page-header nav.primary ul li a:hover, header.page-header nav.primary ul li a.active {
               color: #ffffff;
@@ -1275,12 +1275,42 @@ header.page-header {
           top: 0; } }
 
 .page-body {
+  -webkit-transition: transform, 0.5s;
+  -webkit-transition: 0.5s, -webkit-transform;
+  transition: 0.5s, -webkit-transform;
+  transition: transform, 0.5s;
+  transition: transform, 0.5s, -webkit-transform;
+  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+
+.open .page-body {
+  -webkit-transform: translateX(215px);
+  transform: translateX(215px); }
+
+.open nav.jerry ul {
+  -webkit-transform: translateX(0px);
+  transform: translateX(0px); }
+
+.open .menu {
+  -webkit-transform: translateX(165px);
+  transform: translateX(165px); }
+
+.open .hamburger {
+  background: transparent; }
+  .open .hamburger:before {
+    -webkit-transform: rotate(-130deg);
+    transform: rotate(-130deg);
+    top: 0px;
+    left: -5px; }
+  .open .hamburger:after {
+    -webkit-transform: rotate(130deg);
+    transform: rotate(130deg);
+    top: 0px;
+    left: -5px; }
+
+.page-body {
   position: relative;
-  z-index: 10;
-  margin-top: 80px; }
-  @media screen and (min-width: 768px) {
-    .page-body {
-      margin-top: 90px; } }
+  z-index: 10; }
   .page-body section.panel {
     height: 40vh;
     max-height: 80vh; }

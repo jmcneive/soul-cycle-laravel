@@ -35,6 +35,7 @@
 	<div class="page-container">
 	    <header class="page-header js-header">
 	        <div class="page-inner">
+
 	            <a class="brand-logo" href="#"><img src="img/sacred-cycle-logo-grn-text-vert.png" alt="brand-logo" width="192" height="192"></a>
 	                
 	            <nav class="primary" role="navigation">
@@ -47,12 +48,13 @@
 	                    <li><a href="">For survivors</a></li>
 	                    <li><a href="">Team riders</a></li>
 	                </ul>
+
 	
 	            </nav>
 	
 	            <a class="menu-button button js-menu-button" href="">Menu</a>
 	        </div>
-	    </header>
+	    </header> -->
 	    <div class="page-body">
 			
 			@yield('content')
@@ -63,6 +65,10 @@
 </body>
 
 <script src="js/main.js"></script>
+
+@yield('footer')
+
+
 
 <!-- Google Analytics: change UA-XXXXX-X to your site's ID. -->
 <script>

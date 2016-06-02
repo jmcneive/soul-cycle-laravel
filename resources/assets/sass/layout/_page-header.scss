@@ -1,4 +1,9 @@
 
+@mixin transition ($property, $speed) {
+  -webkit-transition: $property, $speed;
+    transition: $property, $speed;
+}
+
 header.page-header {
     
     position: fixed;
@@ -93,11 +98,11 @@ header.page-header {
                     @media screen and (min-width: $phablet) {
                         display: inline-block;
                         width: auto;
-                        margin: em(37px) 0 0 0;
+                        margin: em(42px) 0 0 0;
                     }
 
                     @media screen and (min-width: $desktop) {
-                        margin-top: em(35px);
+                        margin-top: em(40px);
                     }
 
                     a {
@@ -121,13 +126,13 @@ header.page-header {
                         }
 
                         @media screen and (min-width: $laptop) {
-                            padding: 0 em(10px);
+                            padding: 0 em(13px);
                             // @include typl8-typescale(map-get($typl8-scale, typl8-epsilon), $typl8-font-base, rem);
                             line-height: em(18px);
                         }
 
                         @media screen and (min-width: $desktop) {
-                            padding: 0 em(10px);
+                            padding: 0 em(16px);
                             // @include typl8-typescale(map-get($typl8-scale, typl8-delta), $typl8-font-base, rem);
                             line-height: em(20px);
                         }
@@ -194,3 +199,35 @@ header.page-header {
         }
     }
 }
+
+.page-body {
+    @include transition (transform, 0.5s);
+    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.open {
+  .page-body {
+    transform: translateX(215px);
+  }
+  nav.jerry {
+    ul {
+        transform: translateX(-0px);
+    }
+  }
+  .menu {
+    transform: translateX(165px);   }
+     .hamburger {
+      background: transparent;
+      &:before {
+        transform: rotate(-130deg);
+        top: 0px;
+        left: -5px;
+      }
+      &:after {
+          transform: rotate(130deg);
+          top: 0px;
+        left: -5px;
+      }
+     }
+    }
+
